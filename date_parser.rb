@@ -1,6 +1,6 @@
 require 'date'
 
-class DateParser
+module DateParser
   def self.infer_format(array)
     dates = Array(array).map { |date_string|
       date_string.split(/(\/|-)/).first
